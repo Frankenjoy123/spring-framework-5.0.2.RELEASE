@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.servlet.DispatcherServlet</OriginalElement>
+  <nodes>
+    <node x="732.2144607843137" y="0.0">javax.servlet.ServletConfig</node>
+    <node x="603.0" y="158.0">javax.servlet.http.HttpServlet</node>
+    <node x="741.0" y="158.0">java.lang.SuppressWarnings</node>
+    <node x="496.4644607843137" y="237.0">org.springframework.web.servlet.HttpServletBean</node>
+    <node x="486.2144607843137" y="0.0">javax.servlet.Servlet</node>
+    <node x="172.0330882352941" y="79.0">org.springframework.beans.factory.Aware</node>
+    <node x="492.4644607843137" y="316.0">org.springframework.web.servlet.FrameworkServlet</node>
+    <node x="596.2144607843137" y="0.0">java.io.Serializable</node>
+    <node x="609.1458333333333" y="395.0">org.springframework.web.servlet.DispatcherServlet</node>
+    <node x="224.0" y="158.0">org.springframework.context.EnvironmentAware</node>
+    <node x="593.5" y="79.0">javax.servlet.GenericServlet</node>
+    <node x="408.0" y="158.0">org.springframework.core.env.EnvironmentCapable</node>
+    <node x="0.0" y="158.0">org.springframework.context.ApplicationContextAware</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.context.ApplicationContextAware" target="org.springframework.beans.factory.Aware">
+      <point x="0.0" y="-14.5" />
+      <point x="102.0" y="133.0" />
+      <point x="193.5330882352941" y="133.0" />
+      <point x="-21.5" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.FrameworkServlet" target="org.springframework.web.servlet.HttpServletBean">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.HttpServletBean" target="java.lang.SuppressWarnings">
+      <point x="55.875" y="-14.5" />
+      <point x="626.8394607843137" y="217.0" />
+      <point x="768.5" y="217.0" />
+      <point x="-55.0" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.DispatcherServlet" target="org.springframework.web.servlet.FrameworkServlet">
+      <point x="-39.0" y="-14.5" />
+      <point x="648.1458333333333" y="370.0" />
+      <point x="570.9644607843137" y="370.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.DispatcherServlet" target="java.lang.SuppressWarnings">
+      <point x="39.0" y="-14.5" />
+      <point x="726.1458333333333" y="370.0" />
+      <point x="848.7144607843137" y="370.0" />
+      <point x="848.7144607843137" y="217.0" />
+      <point x="878.5" y="217.0" />
+      <point x="55.0" y="14.5" />
+    </edge>
+    <edge source="javax.servlet.GenericServlet" target="java.io.Serializable">
+      <point x="0.0" y="-14.5" />
+      <point x="662.0" y="54.0" />
+      <point x="654.2144607843137" y="54.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.springframework.context.EnvironmentAware" target="org.springframework.beans.factory.Aware">
+      <point x="0.0" y="-14.5" />
+      <point x="306.0" y="133.0" />
+      <point x="236.5330882352941" y="133.0" />
+      <point x="21.5" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.HttpServletBean" target="org.springframework.context.EnvironmentAware">
+      <point x="-55.875" y="-14.5" />
+      <point x="515.0894607843137" y="217.0" />
+      <point x="306.0" y="217.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.FrameworkServlet" target="java.lang.SuppressWarnings">
+      <point x="52.33333333333337" y="-14.5" />
+      <point x="623.2977941176471" y="291.0" />
+      <point x="837.7144607843137" y="291.0" />
+      <point x="837.7144607843137" y="217.0" />
+      <point x="823.5" y="217.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="javax.servlet.http.HttpServlet" target="javax.servlet.GenericServlet">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.HttpServletBean" target="org.springframework.core.env.EnvironmentCapable">
+      <point x="-18.625" y="-14.5" />
+      <point x="552.3394607843137" y="207.0" />
+      <point x="495.5" y="207.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="javax.servlet.GenericServlet" target="javax.servlet.Servlet">
+      <point x="-45.66666666666663" y="-14.5" />
+      <point x="616.3333333333334" y="54.0" />
+      <point x="531.2144607843137" y="54.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="javax.servlet.GenericServlet" target="javax.servlet.ServletConfig">
+      <point x="45.66666666666663" y="-14.5" />
+      <point x="707.6666666666666" y="54.0" />
+      <point x="797.7144607843137" y="54.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.FrameworkServlet" target="org.springframework.context.ApplicationContextAware">
+      <point x="-52.33333333333337" y="-14.5" />
+      <point x="518.6311274509803" y="291.0" />
+      <point x="102.0" y="291.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.HttpServletBean" target="javax.servlet.http.HttpServlet">
+      <point x="18.625" y="-14.5" />
+      <point x="589.5894607843137" y="207.0" />
+      <point x="662.0" y="207.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="453.0" y="212.0" />
+  <SelectedNodes>
+    <node>org.springframework.web.servlet.DispatcherServlet</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

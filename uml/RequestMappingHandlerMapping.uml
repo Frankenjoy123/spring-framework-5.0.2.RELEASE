@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping</OriginalElement>
+  <nodes>
+    <node x="31.087121212121247" y="237.0">org.springframework.core.Ordered</node>
+    <node x="283.33712121212125" y="79.0">org.springframework.web.context.ServletContextAware</node>
+    <node x="149.08712121212125" y="237.0">org.springframework.web.context.support.WebApplicationObjectSupport</node>
+    <node x="409.83712121212125" y="316.0">org.springframework.web.servlet.handler.MatchableHandlerMapping</node>
+    <node x="344.92803030303025" y="0.0">org.springframework.beans.factory.Aware</node>
+    <node x="57.83712121212125" y="158.0">org.springframework.context.support.ApplicationObjectSupport</node>
+    <node x="160.0" y="316.0">org.springframework.web.servlet.handler.AbstractHandlerMapping</node>
+    <node x="0.0" y="316.0">org.springframework.beans.factory.InitializingBean</node>
+    <node x="27.5" y="474.0">org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping</node>
+    <node x="404.08712121212125" y="237.0">org.springframework.web.servlet.HandlerMapping</node>
+    <node x="520.3371212121212" y="79.0">org.springframework.context.EmbeddedValueResolverAware</node>
+    <node x="384.25" y="553.0">org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping</node>
+    <node x="41.0" y="395.0">org.springframework.web.servlet.handler.AbstractHandlerMethodMapping</node>
+    <node x="59.33712121212125" y="79.0">org.springframework.context.ApplicationContextAware</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.context.ApplicationContextAware" target="org.springframework.beans.factory.Aware">
+      <point x="0.0" y="-14.5" />
+      <point x="161.33712121212125" y="54.0" />
+      <point x="359.26136363636357" y="54.0" />
+      <point x="-28.666666666666686" y="14.5" />
+    </edge>
+    <edge source="org.springframework.context.EmbeddedValueResolverAware" target="org.springframework.beans.factory.Aware">
+      <point x="0.0" y="-14.5" />
+      <point x="638.8371212121212" y="54.0" />
+      <point x="416.59469696969694" y="54.0" />
+      <point x="28.666666666666686" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.handler.MatchableHandlerMapping" target="org.springframework.web.servlet.HandlerMapping">
+      <point x="0.0" y="-14.5" />
+      <point x="37.25" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.handler.AbstractHandlerMapping" target="org.springframework.core.Ordered">
+      <point x="-67.33333333333331" y="-14.5" />
+      <point x="193.66666666666669" y="291.0" />
+      <point x="80.08712121212125" y="291.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.handler.AbstractHandlerMethodMapping" target="org.springframework.web.servlet.handler.AbstractHandlerMapping">
+      <point x="62.25" y="-14.5" />
+      <point x="227.75" y="370.0" />
+      <point x="261.0" y="370.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.handler.AbstractHandlerMapping" target="org.springframework.web.context.support.WebApplicationObjectSupport">
+      <point x="0.0" y="-14.5" />
+      <point x="261.0" y="291.0" />
+      <point x="266.58712121212125" y="291.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.context.support.WebApplicationObjectSupport" target="org.springframework.web.context.ServletContextAware">
+      <point x="58.75" y="-14.5" />
+      <point x="325.33712121212125" y="212.0" />
+      <point x="371.83712121212125" y="212.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" target="org.springframework.web.servlet.handler.MatchableHandlerMapping">
+      <point x="0.0" y="-14.5" />
+      <point x="510.25" y="528.0" />
+      <point x="515.8371212121212" y="528.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.handler.AbstractHandlerMethodMapping" target="org.springframework.beans.factory.InitializingBean">
+      <point x="-62.25" y="-14.5" />
+      <point x="103.25" y="370.0" />
+      <point x="70.0" y="370.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.context.support.WebApplicationObjectSupport" target="org.springframework.context.support.ApplicationObjectSupport">
+      <point x="-58.75" y="-14.5" />
+      <point x="207.83712121212125" y="212.0" />
+      <point x="161.33712121212125" y="212.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" target="org.springframework.context.EmbeddedValueResolverAware">
+      <point x="84.0" y="-14.5" />
+      <point x="594.25" y="528.0" />
+      <point x="638.8371212121212" y="528.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.handler.AbstractHandlerMapping" target="org.springframework.web.servlet.HandlerMapping">
+      <point x="67.33333333333331" y="-14.5" />
+      <point x="328.3333333333333" y="291.0" />
+      <point x="441.33712121212125" y="291.0" />
+      <point x="-37.25" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.context.ServletContextAware" target="org.springframework.beans.factory.Aware">
+      <point x="0.0" y="-14.5" />
+      <point x="371.83712121212125" y="54.0" />
+      <point x="387.92803030303025" y="54.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.springframework.context.support.ApplicationObjectSupport" target="org.springframework.context.ApplicationContextAware">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" target="org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping">
+      <point x="-84.0" y="-14.5" />
+      <point x="426.25" y="528.0" />
+      <point x="165.5" y="528.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping" target="org.springframework.web.servlet.handler.AbstractHandlerMethodMapping">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8355481727574751" x="379.0" y="291.0" />
+  <SelectedNodes>
+    <node>org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
