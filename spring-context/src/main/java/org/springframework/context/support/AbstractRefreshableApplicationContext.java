@@ -70,6 +70,7 @@ public abstract class AbstractRefreshableApplicationContext extends AbstractAppl
 	@Nullable
 	private Boolean allowCircularReferences;
 
+	//DefaultListableBeanFactory实例
 	/** Bean factory for this context */
 	@Nullable
 	private DefaultListableBeanFactory beanFactory;
@@ -130,6 +131,8 @@ public abstract class AbstractRefreshableApplicationContext extends AbstractAppl
 			DefaultListableBeanFactory beanFactory = createBeanFactory();
 			beanFactory.setSerializationId(getId());
 			customizeBeanFactory(beanFactory);
+			//这里的实现有两种：1.mvc的，XmlWebApplicationContext #loadBeanDefinitions
+			//2.ClassPathXmlApplicationContext #loadBeanDefinitions
 			loadBeanDefinitions(beanFactory);
 			synchronized (this.beanFactoryMonitor) {
 				this.beanFactory = beanFactory;

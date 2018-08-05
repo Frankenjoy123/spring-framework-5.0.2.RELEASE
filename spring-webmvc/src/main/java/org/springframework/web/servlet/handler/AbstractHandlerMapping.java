@@ -348,7 +348,8 @@ public abstract class AbstractHandlerMapping extends WebApplicationObjectSupport
 	@Override
 	@Nullable
 	public final HandlerExecutionChain getHandler(HttpServletRequest request) throws Exception {
-		//两种实现，其中一种AbstractHandlerMethodMapping，是rest方法实现
+		//两种实现，其中一种AbstractHandlerMethodMapping
+		//最终得到的handler是HandlerMethod，里面有controller bean，method反射方法，方法参数
 		Object handler = getHandlerInternal(request);
 		if (handler == null) {
 			handler = getDefaultHandler();
@@ -362,6 +363,7 @@ public abstract class AbstractHandlerMapping extends WebApplicationObjectSupport
 			handler = obtainApplicationContext().getBean(handlerName);
 		}
 
+		//handerMethod得到之后，再将HandlerInterceptor放在HandlerExecutionChain，链式调用
 		HandlerExecutionChain executionChain = getHandlerExecutionChain(handler, request);
 		if (CorsUtils.isCorsRequest(request)) {
 			CorsConfiguration globalConfig = this.globalCorsConfigSource.getCorsConfiguration(request);

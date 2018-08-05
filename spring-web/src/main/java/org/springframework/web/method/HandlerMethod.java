@@ -56,13 +56,17 @@ public class HandlerMethod {
 	/** Logger that is available to subclasses */
 	protected final Log logger = LogFactory.getLog(getClass());
 
+	//一般指beanName，比如helloController，首字母小写
 	private final Object bean;
 
 	@Nullable
+	//一般指DefaultListableBeanFactory
 	private final BeanFactory beanFactory;
 
+	//class类型
 	private final Class<?> beanType;
 
+	//反射方法
 	private final Method method;
 
 	private final Method bridgedMethod;
@@ -149,6 +153,7 @@ public class HandlerMethod {
 	}
 
 	/**
+	 * 重新创建HandlerMethod，handler(helloController)放在bean变量中
 	 * Re-create HandlerMethod with the resolved handler.
 	 */
 	private HandlerMethod(HandlerMethod handlerMethod, Object handler) {
